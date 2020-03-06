@@ -296,13 +296,16 @@ public:
     SaveWindowProcessToZoneIndex(HWND window) noexcept;
     IFACEMETHODIMP_(IZoneSet*)
     ActiveZoneSet() noexcept { return m_activeZoneSet.get(); }
+    IFACEMETHODIMP_(void)
+    ShowZoneWindow() noexcept;
+    IFACEMETHODIMP_(void)
+    HideZoneWindow() noexcept;
 
 protected:
     static LRESULT CALLBACK s_WndProc(HWND window, UINT message, WPARAM wparam, LPARAM lparam) noexcept;
 
 private:
-    void ShowZoneWindow() noexcept;
-    void HideZoneWindow() noexcept;
+    
     void LoadSettings() noexcept;
     void InitializeZoneSets(MONITORINFO const& mi) noexcept;
     void CalculateZoneSet() noexcept;
@@ -514,7 +517,6 @@ ZoneWindow::SaveWindowProcessToZoneIndex(HWND window) noexcept
     }
 }
 
-#pragma region private
 void ZoneWindow::ShowZoneWindow() noexcept
 {
     if (m_window)
@@ -547,6 +549,8 @@ void ZoneWindow::HideZoneWindow() noexcept
         m_highlightZone = nullptr;
     }
 }
+
+#pragma region private
 
 void ZoneWindow::LoadSettings() noexcept
 {
