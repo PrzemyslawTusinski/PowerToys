@@ -510,7 +510,8 @@ ZoneWindow::SaveWindowProcessToZoneIndex(HWND window) noexcept
     }
 }
 
-void ZoneWindow::ShowZoneWindow() noexcept
+IFACEMETHODIMP_(void)
+ZoneWindow::ShowZoneWindow() noexcept
 {
     if (m_window)
     {
@@ -531,7 +532,8 @@ void ZoneWindow::ShowZoneWindow() noexcept
     }
 }
 
-void ZoneWindow::HideZoneWindow() noexcept
+IFACEMETHODIMP_(void)
+ZoneWindow::HideZoneWindow() noexcept
 {
     if (m_window)
     {
