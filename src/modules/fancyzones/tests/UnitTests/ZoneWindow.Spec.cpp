@@ -510,6 +510,7 @@ namespace FancyZonesUnitTests
             Assert::AreNotEqual(-1, actualZoneIndex); //with invalid point zone remains the same
         }
 
+        /*
         TEST_METHOD(MoveSizeCancel)
         {
             m_zoneWindow = MakeZoneWindow(m_hostPtr, m_hInst, m_monitor, m_uniqueId.str(), false);
@@ -519,6 +520,7 @@ namespace FancyZonesUnitTests
 
             Assert::AreEqual(expected, actual);
         }
+        */
 
         TEST_METHOD(MoveWindowIntoZoneByIndexNoActiveZoneSet)
         {
