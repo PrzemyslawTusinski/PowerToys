@@ -963,7 +963,7 @@ void FancyZones::MoveSizeUpdateInternal(HMONITOR monitor, POINT const& ptScreen,
             if (!m_dragEnabled)
             {
                 // Drag got disabled, tell it to cancel and hide all windows
-                auto zoneWindow = std::move(m_zoneWindowMoveSize);
+                m_zoneWindowMoveSize = nullptr;
                 for (auto [key_monitor, zoneWindow] : m_zoneWindowMap)
                 {
                     if (zoneWindow)
