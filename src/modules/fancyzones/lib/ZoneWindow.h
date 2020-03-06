@@ -15,7 +15,6 @@ interface __declspec(uuid("{7F017528-8110-4FB3-BE41-F472969C2560}")) IZoneWindow
     IFACEMETHOD(MoveSizeEnter)(HWND window, bool dragEnabled) = 0;
     IFACEMETHOD(MoveSizeUpdate)(POINT const& ptScreen, bool dragEnabled) = 0;
     IFACEMETHOD(MoveSizeEnd)(HWND window, POINT const& ptScreen) = 0;
-    IFACEMETHOD(MoveSizeCancel)() = 0;
     IFACEMETHOD_(bool, IsDragEnabled)() = 0;
     IFACEMETHOD_(void, MoveWindowIntoZoneByIndex)(HWND window, int index) = 0;
     IFACEMETHOD_(void, MoveWindowIntoZoneByDirection)(HWND window, DWORD vkCode) = 0;

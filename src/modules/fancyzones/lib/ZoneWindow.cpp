@@ -279,7 +279,6 @@ public:
     IFACEMETHODIMP MoveSizeEnter(HWND window, bool dragEnabled) noexcept;
     IFACEMETHODIMP MoveSizeUpdate(POINT const& ptScreen, bool dragEnabled) noexcept;
     IFACEMETHODIMP MoveSizeEnd(HWND window, POINT const& ptScreen) noexcept;
-    IFACEMETHODIMP MoveSizeCancel() noexcept;
     IFACEMETHODIMP_(bool)
     IsDragEnabled() noexcept { return m_dragEnabled; }
     IFACEMETHODIMP_(void)
@@ -455,12 +454,6 @@ IFACEMETHODIMP ZoneWindow::MoveSizeEnd(HWND window, POINT const& ptScreen) noexc
 
     HideZoneWindow();
     m_windowMoveSize = nullptr;
-    return S_OK;
-}
-
-IFACEMETHODIMP ZoneWindow::MoveSizeCancel() noexcept
-{
-    HideZoneWindow();
     return S_OK;
 }
 
