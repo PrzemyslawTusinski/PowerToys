@@ -263,6 +263,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerUI", "src\module
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "colorpicker", "colorpicker", "{1D78B84B-CA39-406C-98F4-71F7EC266CC0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VideoConference", "VideoConference", "{D77D2993-731C-415C-AFCA-5E87875F2E48}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoConferenceCustomMediaSource", "src\modules\videoconference\VideoConferenceCustomMediaSource\VideoConferenceCustomMediaSource.vcxproj", "{43AD9BF7-E765-48FE-9826-71A8F2CB12DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A} = {459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoConferenceShared", "src\modules\videoconference\VideoConferenceShared\VideoConferenceShared.vcxproj", "{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoConferenceVirtualDriver", "src\modules\videoconference\VideoConferenceVirtualDriver\VideoConferenceVirtualDriver.vcxproj", "{3098C6BF-E96E-4793-A70E-FB09B741580A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A} = {459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoConferenceModule", "src\modules\videoconference\VideoConferenceModule\Video Conference.vcxproj", "{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -517,6 +533,22 @@ Global
 		{BA58206B-1493-4C75-BFEA-A85768A1E156}.Debug|x64.Build.0 = Debug|x64
 		{BA58206B-1493-4C75-BFEA-A85768A1E156}.Release|x64.ActiveCfg = Release|x64
 		{BA58206B-1493-4C75-BFEA-A85768A1E156}.Release|x64.Build.0 = Release|x64
+		{43AD9BF7-E765-48FE-9826-71A8F2CB12DD}.Debug|x64.ActiveCfg = Debug|x64
+		{43AD9BF7-E765-48FE-9826-71A8F2CB12DD}.Debug|x64.Build.0 = Debug|x64
+		{43AD9BF7-E765-48FE-9826-71A8F2CB12DD}.Release|x64.ActiveCfg = Release|x64
+		{43AD9BF7-E765-48FE-9826-71A8F2CB12DD}.Release|x64.Build.0 = Release|x64
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}.Debug|x64.ActiveCfg = Debug|x64
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}.Debug|x64.Build.0 = Debug|x64
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}.Release|x64.ActiveCfg = Release|x64
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A}.Release|x64.Build.0 = Release|x64
+		{3098C6BF-E96E-4793-A70E-FB09B741580A}.Debug|x64.ActiveCfg = Debug|x64
+		{3098C6BF-E96E-4793-A70E-FB09B741580A}.Debug|x64.Build.0 = Debug|x64
+		{3098C6BF-E96E-4793-A70E-FB09B741580A}.Release|x64.ActiveCfg = Release|x64
+		{3098C6BF-E96E-4793-A70E-FB09B741580A}.Release|x64.Build.0 = Release|x64
+		{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193}.Debug|x64.ActiveCfg = Debug|x64
+		{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193}.Debug|x64.Build.0 = Debug|x64
+		{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193}.Release|x64.ActiveCfg = Release|x64
+		{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -590,6 +622,11 @@ Global
 		{655C9AF2-18D3-4DA6-80E4-85504A7722BA} = {1D78B84B-CA39-406C-98F4-71F7EC266CC0}
 		{BA58206B-1493-4C75-BFEA-A85768A1E156} = {1D78B84B-CA39-406C-98F4-71F7EC266CC0}
 		{1D78B84B-CA39-406C-98F4-71F7EC266CC0} = {4574FDD0-F61D-4376-98BF-E5A1262C11EC}
+		{D77D2993-731C-415C-AFCA-5E87875F2E48} = {4574FDD0-F61D-4376-98BF-E5A1262C11EC}
+		{43AD9BF7-E765-48FE-9826-71A8F2CB12DD} = {D77D2993-731C-415C-AFCA-5E87875F2E48}
+		{459E0768-7EBD-4C41-BBA1-6DB3B3815E0A} = {D77D2993-731C-415C-AFCA-5E87875F2E48}
+		{3098C6BF-E96E-4793-A70E-FB09B741580A} = {D77D2993-731C-415C-AFCA-5E87875F2E48}
+		{FD2CAFFC-D682-4ED9-A06B-5FC88AE0A193} = {D77D2993-731C-415C-AFCA-5E87875F2E48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3A2F9D1-7930-4EF4-A6FC-7EE0A99821D0}
